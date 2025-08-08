@@ -1,25 +1,25 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Dario",
+  lastName: "Salles",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Developer | PHP Laravel | ReactJS | Typescript | Javascript | HTML | CSS | Flutter | Docker | GIT",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "dariosalles@gmail.com",
+  location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Português", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false,
+  title: <>Inscreva-se na Newsletter de {person.firstName}</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Eu ocasionalmente escrevo sobre design, tecnologia e compartilho pensamentos sobre a interseção de
+      criatividade e engenharia.
     </>
   ),
 };
@@ -28,19 +28,24 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Whatsapp",
+    icon: "whatsapp",
+    link: "https://api.whatsapp.com/send/?phone=5512988262312&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+reuni%C3%A3o+com+voc%C3%AA.&app_absent=0",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/dariosalles",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/dariosalles",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/dariosalles",
   },
   {
     name: "Email",
@@ -54,26 +59,25 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfólio mostrando meu trabalho como ${person.role}`,
+  headline: <>Construindo pontes entre design e código</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Projeto Recente: <strong className="ml-4">Aplicativo Flutter</strong></>,
+    href: "/work/aplicativo-agrovivaz",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Sou Dario, um desenvolvedor full stack, onde crio experiências de usuário intuitivas e impactantes.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "Sobre",
+  title: `Sobre – ${person.name}`,
+  description: `Conheça ${person.name}, ${person.role} de ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,110 +87,169 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://api.whatsapp.com/send/?phone=5512988262312&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+reuni%C3%A3o+com+voc%C3%AA.&app_absent=0",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introdução",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Dario Salles é um desenvolvedor full stack apaixonado por construir soluções robustas e escaláveis que conectam a experiência do usuário ao desempenho técnico. Com experiência em tecnologias front-end e back-end, ele cria produtos digitais integrados, tão intuitivos quanto poderosos.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiência Profissional",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Apus Soluções em TI",
+        timeframe: "2021 - 2025",
+        role: "Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Projeto EAD - Focado em entregar soluções digitais impactantes por meio da criação de novos recursos e do suporte contínuo aos existentes, ele combina um profundo conhecimento de tecnologias modernas com um compromisso com a estabilidade do código, garantindo que os produtos evoluam sem perder a confiabilidade.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/apus/project-apus01.png",
+            alt: "Apus Educacional Home Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/apus/project-apus02.png",
+            alt: "Módulo EAD - Tela Inicial do Professor",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/apus/project-apus03.png",
+            alt: "Módulo Avaliações",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/apus/project-apus04.png",
+            alt: "Módulo Diário do Professor",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "DSXWEB",
+        timeframe: "2018 - 2021",
+        role: "CEO",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Desenvolvimento de sites, aplicativos, sistemas e gerenciamento de mídias sociais.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/dsxweb/project-dsxweb01.png",
+            alt: "Website DSXWEB",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/dsxweb/project-dsxweb02.png",
+            alt: "Aplicativo Agrovivaz - Flutter",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/dsxweb/project-dsxweb03.png",
+            alt: "Aplicativo Gorgonzola Burger - Flutter",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/dsxweb/project-dsxweb04.png",
+            alt: "Website Agrovivaz",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Agrocultivo",
+        timeframe: "2011 - 2018",
+        role: "Full Stack Developer | Marketing | Aux. Administrativo",
+        achievements: [
+          <>
+            Responsável pela criação de toda a identidade visual, gestão das redes sociais e do website.
+          </>,
+          <>
+            Gestão de CRM (emissão de notas fiscais, controle de estoque, etc.).
+          </>
+        ],
+        images: [
+          {
+            src: "/images/projects/agrocultivo/project-agrocultivo01.png",
+            alt: "Agrocultivo",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Estudos e Formação",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Etec João Carlos de Araújo - Pindamonhangaba/SP",
+        description: <>Análise e Desenvolvimento de Sistemas</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Anhanguera — Taubaté/SP",
+        description: <>Ciência da Computação</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Habilidades Técnicas - Top Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "PHP Laravel",
+        description: <>Experiência em construir aplicações web escaláveis e APIs RESTful usando a sintaxe elegante e o poderoso ecossistema do Laravel.</>,
+        //optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/projects/laravel.png",
+            alt: "Laravel",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "React js",
+        description: <>Construindo interfaces de usuário dinâmicas e responsivas com React.js, integrando componentes e ferramentas modernas.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/projects/reactjs.png",
+            alt: "React JS",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: ".Net (Adquirindo Conhecimento)",
+        description: <>Estudando - ecossistema .NET.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/dotnet.jpg",
+            alt: ".Net",
             width: 16,
             height: 9,
           },
@@ -207,9 +270,9 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  label: "Portfólio",
+  title: `Projetos – ${person.name}`,
+  description: `Projetos de design e desenvolvimento por ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
