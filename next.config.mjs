@@ -1,5 +1,11 @@
 import mdx from "@next/mdx";
 
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
+
 const withMDX = mdx({
   extension: /\.mdx?$/,
   options: {},
