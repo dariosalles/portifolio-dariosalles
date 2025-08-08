@@ -1,18 +1,10 @@
 import mdx from "@next/mdx";
 
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-}
-
-const withMDX = mdx({
-  extension: /\.mdx?$/,
-  options: {},
-});
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   sassOptions: {
@@ -21,4 +13,10 @@ const nextConfig = {
   },
 };
 
+const withMDX = mdx({
+  extension: /\.mdx?$/,
+  options: {},
+});
+
 export default withMDX(nextConfig);
+
