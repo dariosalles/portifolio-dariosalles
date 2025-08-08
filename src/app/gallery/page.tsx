@@ -1,11 +1,16 @@
 import { Flex, Meta, Schema } from "@once-ui-system/core";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
-import { baseURL, gallery, person } from "@/resources";
+import { baseURL,
+   //gallery, 
+   person } from "@/resources";
+import { gallery } from "@/resources/content";
 
 export async function generateMetadata() {
   return Meta.generate({
-    title: gallery.title,
-    description: gallery.description,
+    //title: gallery.title,
+    title: "",
+    //description: gallery.description,
+    description: "",
     baseURL: baseURL,
     image: `/api/og/generate?title=${encodeURIComponent(gallery.title)}`,
     path: gallery.path,
