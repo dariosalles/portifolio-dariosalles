@@ -168,7 +168,7 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/projects/dsxweb/project-dsxweb04.png",
+            src: "/images/projects/dsxweb/project-dsxweb06.png",
             alt: "Website Agrovivaz",
             width: 16,
             height: 9,
