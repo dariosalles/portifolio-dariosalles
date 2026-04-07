@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Full Stack Developer | PHP Laravel | ReactJS | Typescript | Javascript | HTML | CSS | Flutter | Docker | GIT",
+  role: "Full Stack Developer | PHP Laravel | CakePHP | ReactJS | Typescript | Javascript | HTML | CSS | Flutter | Docker | GIT",
   avatar: "/images/avatar.jpg",
   email: "dariosalles@gmail.com",
   location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -141,7 +141,7 @@ const about = {
       },
       {
         company: "DSXWEB",
-        timeframe: "2018 - 2021",
+        timeframe: "2018 - 2026",
         role: "CEO",
         achievements: [
           <>
@@ -161,15 +161,21 @@ const about = {
             width: 16,
             height: 9,
           },
+          // {
+          //   src: "/images/projects/dsxweb/project-dsxweb03.png",
+          //   alt: "Aplicativo Gorgonzola Burger - Flutter",
+          //   width: 16,
+          //   height: 9,
+          // },
           {
-            src: "/images/projects/dsxweb/project-dsxweb03.png",
-            alt: "Aplicativo Gorgonzola Burger - Flutter",
+            src: "/images/projects/dsxweb/project-dsxweb06.png",
+            alt: "Website Agrovivaz",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/dsxweb/project-dsxweb06.png",
-            alt: "Website Agrovivaz",
+            src: "/images/projects/dsxweb/project-dsxweb07.png",
+            alt: "Sistema Emplaca Mais",
             width: 16,
             height: 9,
           },
@@ -202,6 +208,10 @@ const about = {
     display: true, // set to false to hide this section
     title: "Estudos e Formação",
     institutions: [
+      {
+        name: "Faculdade Estácio - EAD",
+        description: <>Cursando Análise e Desenvolvimento de Sistemas</>,
+      },
       {
         name: "Etec João Carlos de Araújo - Pindamonhangaba/SP",
         description: <>Análise e Desenvolvimento de Sistemas</>,
