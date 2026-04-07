@@ -7,7 +7,8 @@ import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "work", "projects"]);
+  const posts = getPosts(["src", "app", "work", "projects"])
+    .filter((post) => post.metadata.published !== false);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -22,6 +23,7 @@ export async function generateMetadata({
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
   const posts = getPosts(["src", "app", "work", "projects"])
+    .filter((post) => post.metadata.published !== false)
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -41,7 +43,9 @@ export default async function Project({
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
-  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "work", "projects"])
+    .filter((post) => post.metadata.published !== false)
+    .find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
