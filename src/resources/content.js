@@ -8,7 +8,7 @@ const person = {
   },
   role: "Full Stack Developer | PHP Laravel | CakePHP | ReactJS | Typescript | Javascript | HTML | CSS | Flutter | Docker | GIT",
   avatar: "/images/avatar-3.jpg",
-  email: "dariosalles@gmail.com",
+  email: "dariosalles0@gmail.com",
   location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Português", "English"], // optional: Leave the array empty if you don't want to display languages
 };
