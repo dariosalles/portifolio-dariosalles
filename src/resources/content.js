@@ -161,12 +161,12 @@ const about = {
             width: 16,
             height: 9,
           },
-          // {
-          //   src: "/images/projects/dsxweb/project-dsxweb03.png",
-          //   alt: "Aplicativo Gorgonzola Burger - Flutter",
-          //   width: 16,
-          //   height: 9,
-          // },
+          {
+            src: "/images/projects/dsxweb/ecommerce01.png",
+            alt: "E-commerce Laravel + React (Projeto modelo)",
+            width: 16,
+            height: 9,
+          },
           {
             src: "/images/projects/dsxweb/project-dsxweb06.png",
             alt: "Website Agrovivaz",
