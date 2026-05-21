@@ -1,0 +1,93 @@
+---
+title: "Minhas Senhas 4"
+publishedAt: "2025-08-01"
+summary: "Gerenciador de senhas mobile em Flutter com autenticação biométrica integrada"
+images:
+  - "/images/projects/project-01/minhassenhas01.png"
+team:
+  - name: "Dario Salles"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/dariosalles/"
+link: "https://github.com/dariosalles/minhassenhas4"
+---
+
+## Sobre o projeto
+
+**Minhas Senhas 4** é um gerenciador de senhas mobile desenvolvido em Flutter que oferece autenticação biométrica integrada, armazenamento seguro com criptografia AES-256-CBC e suporte multiplataforma (Android, iOS e Web).
+
+## 🔐 Features Principais
+
+**Segurança**
+
+  ✅ Criptografia AES-256-CBC de ponta a ponta<br />
+  ✅ Autenticação biométrica (Face ID / Impressão Digital)<br />
+  ✅ Armazenamento seguro com FlutterSecureStorage<br />
+  ✅ Tokens JWT para autenticação com servidor<br />
+  ✅ One-time protection para sincronização MySQL<br />
+  ✅ SharedPreferences criptografadas<br />
+
+**Autenticação Biométrica**
+
+  ✅ Detecção automática de capacidade biométrica<br />
+  ✅ Ativação pós-primeiro login<br />
+  ✅ Fallback para login tradicional<br />
+  ✅ Suporte para Face ID, Fingerprint e outros tipos<br />
+  ✅ Armazenamento seguro de credenciais<br />
+
+**Gerenciamento de Senhas**
+
+  ✅ Adicionar, editar e deletar credenciais<br />
+  ✅ Banco de dados SQLite local<br />
+  ✅ Sincronização com servidor MySQL (opcional)<br />
+  ✅ Persistência de sessão e preferências<br />
+  ✅ Autenticação de usuários com email e senha<br />
+  ✅ Interface intuitiva e responsiva<br />
+
+## 🛠️ Tecnologias Usadas
+
+- Flutter 3.7.2<br />
+- Dart 3.x<br />
+- SQLite (armazenamento local)<br />
+- MySQL (sincronização opcional)<br />
+- Local Auth (autenticação biométrica)<br />
+- Flutter Secure Storage (armazenamento seguro)<br />
+- AES-256-CBC (criptografia)<br />
+- MobX (state management)<br />
+- JWT (autenticação com servidor)<br />
+
+## 📊 Stack Tecnológico
+
+- **http**: Requisições HTTP
+- **flutter_secure_storage**: Armazenamento encriptado de credenciais
+- **local_auth**: Autenticação biométrica
+- **sqflite**: Banco de dados SQLite
+- **encrypt**: Criptografia AES
+- **mobx / flutter_mobx**: State management
+- **shared_preferences**: Armazenamento local
+- **url_launcher**: Abrir URLs
+- **file_picker**: Seletor de arquivos
+- **intl**: Internacionalização
+- **mysql1**: Driver MySQL
+
+## 📱 Plataformas Suportadas
+
+| Plataforma | Status |
+|-----------|--------|
+| Android | ✅ Completo (API 21+) |
+| iOS | ✅ Completo (iOS 11+) |
+| Web | ⚠️ Parcial (sem biometria) |
+
+## 🔒 Arquitetura de Segurança
+
+- **Biometria nativa**: LocalAuthentication do dispositivo
+- **Armazenamento seguro**: FlutterSecureStorage para credenciais
+- **Criptografia**: AES-256-CBC para senhas armazenadas
+- **Tokens JWT**: Autenticação segura com servidor
+- **MainActivity**: Estende FlutterFragmentActivity para suporte a biometria
+
+## 👨‍💻 Status do Projeto
+
+- 📅 Data de criação: 2025
+- 📌 Status: Em desenvolvimento ativo
+- 🐙 Repositório: <a href="https://github.com/dariosalles/minhassenhas4" target="_blank" rel="noopener noreferrer">https://github.com/dariosalles/minhassenhas4</a>
